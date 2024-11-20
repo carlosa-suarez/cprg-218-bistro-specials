@@ -26,11 +26,11 @@ const specials = fetch('specials.json')
 
 
 function processDay(weekday, specials) {
-    let special = specials.filter(x => x.day.toLowerCase == weekday.toLowerCase)[0];
+    let special = specials.filter(x => x.day.toLowerCase() == weekday.toLowerCase())[0];
     //console.log(special);
 
     // fill up with data
-    special_image.src = `images/${special.day.toLowerCase}.jpg`;
+    special_image.src = `images/${special.day.toLowerCase()}.jpg`;
     special_name.innerHTML = `${special.day} ${special.name}`;
     special_description.innerHTML = special.description;
 }
