@@ -30,7 +30,7 @@ function processDay(weekday, specials) {
     //console.log(special);
 
     // fill up with data
-    special_image.src = `images/${weekday.toLowerCase}.jpg`;
+    special_image.src = `images/${special.day.toLowerCase}.jpg`;
     special_name.innerHTML = `${special.day} ${special.name}`;
     special_description.innerHTML = special.description;
 }
